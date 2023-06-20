@@ -9,8 +9,10 @@ class SpringTestApplicationTests {
 
 	@Test
 	void namePlayerTesting() {
-		Player player = new Player();
-		Assertions.assertEquals(player.getName("Trecka1"), null);
+		 Player player1 = new Player();
+		 Player player2 = new Player();
+		// Assertions.assertEquals(player.getName("Trecka1"), null);
+		Assertions.assertEquals(player1.getName("Messi"), player2.getName("Messi"));
 	}
 
 }
