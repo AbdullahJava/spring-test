@@ -6,6 +6,8 @@ class StudentTest {
 
     private Student student;
 
+
+
     @BeforeAll
     static void beforeAll() {
         System.out.println("@BeforeAll..........");
