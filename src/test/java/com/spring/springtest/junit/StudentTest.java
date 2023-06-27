@@ -1,8 +1,6 @@
 package com.spring.springtest.junit;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 class StudentTest {
 
@@ -19,7 +17,15 @@ class StudentTest {
         System.out.println("@BeforeEach..........");
     }
 
+    @AfterAll
+    static void afterAll() {
+        System.out.println("@AfterAll................");
+    }
 
+    @AfterEach
+    void tearDown() {
+        System.out.println("@AfterEach................");
+    }
 
     @Test
     void getName() {
