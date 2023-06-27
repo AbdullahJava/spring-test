@@ -1,5 +1,6 @@
-package com.spring.springtest;
+package com.spring.springtest.before;
 
+import com.spring.springtest.before.Player;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
