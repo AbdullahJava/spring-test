@@ -6,36 +6,20 @@ class StudentTest {
 
     private Student student;
 
-
-
-    @BeforeAll
-    static void beforeAll() {
-        System.out.println("@BeforeAll..........");
-    }
-
     @BeforeEach
     void setUp() {
         student = new Student();
-        System.out.println("@BeforeEach..........");
-    }
-
-    @AfterAll
-    static void afterAll() {
-        System.out.println("@AfterAll................");
-    }
-
-    @AfterEach
-    void tearDown() {
-        System.out.println("@AfterEach................");
     }
 
     @Test
     void getName() {
-        System.out.println(student.getName());
+        //Assertions.assertEquals(student.getName(),"eslam","Name not Matches");
+        Assertions.assertTrue("Abdallha".equals(student.getName()),() -> "Name not Matches");
     }
 
     @Test
     void getAge() {
-        System.out.println(student.getAge());
+        //Assertions.assertEquals(student.getAge(),"22","Age not Matches");
+        Assertions.assertTrue("22".equals(student.getAge()),() -> "Age not Matches");
     }
 }
